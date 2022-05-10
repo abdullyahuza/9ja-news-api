@@ -6,7 +6,7 @@ var app = require('./app');
 
 const start = async () => {
   try {
-    app.listen(process.env.PORT, () =>
+    app.listen(process.env.PORT || 3000, () =>
       console.log(`App listening at :${process.env.PORT}`)
     );
   } catch (error) {
