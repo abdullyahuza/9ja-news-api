@@ -60,8 +60,6 @@ const getNews = (sites, keyword) => {
 
 			})
 	})
-
-	// const unique = returnUniqueNews(news, 'title')
 	
 	return {keyword: keywordFirst, news}
 }
