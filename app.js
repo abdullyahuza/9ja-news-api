@@ -60,11 +60,13 @@ const getNews = (sites, keyword) => {
 
 			})
 	})
+
+	// const unique = returnUniqueNews(news, 'title')
 	
 	return {keyword: keywordFirst, news}
 }
 
-const news = getNews(sites, 'Buhari')
+const news = getNews(sites, 'gun')
 
 app.get('/', (req, res) => {
 	res.send('<h1>9ja-news-api</h1>')
